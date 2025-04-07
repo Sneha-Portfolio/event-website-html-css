@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="assets/allstyling.css">
+
+    <style>
+
+
+           .php {
+                 max-width: 100%;
+                 height: auto;
+                 width: 600px;
+                 border-radius: 20px;
+                 margin-left:180px;
+                 margin-bottom:5px;
+                }
+
+          .hdgs { 
+                 text-align:center;
+                 margin-top:25px;
+                 color:Purple;
+                 font-size:22px;                
+                }
+
+              p {
+                 padding-left:10px;
+                 margin-left: 15px;
+                 color:brown;
+                }
+
+           main { 
+                 padding: 20px;
+                 margin: auto;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                }
+
+
+       #gallery {
+                 text-align: center;
+                 margin: 5px 0 100px;
+                 height:1000px;
+                }
+
+.grid-container {
+                 display: grid;
+                 grid-template-columns: repeat 1fr;
+                 gap: 2px;
+                 padding: 10px;
+                 margin:2px;
+                }
+     
+          table {
+                 border-collapse: collapse;
+                 width: 100%;
+                 padding-bottom:100px;
+                }
+
+             td {
+                 border: none;
+                 padding: 10px;
+                }
+
+       .subhdgs {
+                 color: navy;
+                 font-size: 24px;
+                 font-weight: bold;
+                 margin-bottom: 20px;
+                 padding-top: auto;
+                 font-family: 'Satisfy', cursive;
+                 text-align:center;
+                }
+
+            img {
+                 display: block;
+                 width:400px;
+                 height: 220px;
+                 border-radius: 10px;
+                }
+
+          .pics {
+                 border: none;
+                 padding: 40px;
+                 position: relative;
+                 overflow: hidden;
+                 margin: 10px;
+                 flex: 1;
+                }
+
+          .line {
+                 border: none; 
+                 border-top: 2px solid salmon; 
+                 margin: 15px auto; 
+                 height: 2px;
+                 width: 85%;
+                 text-align: center; 
+                }
+
+        .cimage {          
+                 transition: transform 0.2s;
+                }
+
+  .cimage:hover {
+                 transform: scale(1.1);
+                 border: 2px solid #ff0080;
+                }
+
+
+
+    </style>
+</head>
+
+<body id="top">
+<header>
+    <h1>Home</h1>
+    <figure class="banner">
+    <a href="index.html">
+        <img src="assets/Banner.jpg" alt="Banner Image" class="php">
+    </a>
+    </figure>
+    <nav>
+        <ul class="nlist">
+            <li class="nitem"><a href="index.html" class="nlink">Home</a></li>
+            <li class="nitem"><a href="aboutus.html" class="nlink">About Us</a></li>
+            <li class="nitem">
+                <a href="services.html" class="nlink">Services</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="booking.html" class="nlink">Booking</a></li>
+                    <li class="submenu-item"><a href="pricing.html" class="nlink">Pricing</a></li>
+                </ul>
+            </li>
+            <li class="nitem"><a href="contactus.html" class="nlink">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <h2 class="ani">MINI MINGLE</h2>
+
+ <main>
+  <h3 class="hdgs">WELCOME</h3>
+            <p>Mini Mingle is your one-stop destination for unforgettable party experiences. We specialize in creating magical moments and turning ordinary events into extraordinary ones. With our dedicated team of professionals and a wide range of services, we bring joy, excitement, and wonder to every celebration. Mini Mingle is here to make it a truly memorable experience for you and your guests.</p>
+    
+
+        <section id="gallery" class="grid-container"><hr class="line">
+
+
+            <table>
+                
+                    <caption class="subhdgs">Our Parties</caption>
+                    <tbody>
+                    <tr>
+                    <td colspan="3">
+                    <p>Step into a visual wonderland and explore a gallery brimming with the enchanting moments we've crafted for our clients.
+                       Each image tells a story, capturing the essence of joy, laughter, and celebration.</p>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td class="pics"><img src="assets/Deco1.jpg" alt="Decorations 1" usemap="#map-1"></td>
+                        <map name="map-1">
+                            <area shape="circle" coords="200,110,110" href="https://www.partycity.com/">
+                        </map>
+                        <td class="pics"><img src="assets/Deco2.jpg" alt="Decorations 2"></td>                        
+                        <td class="pics"> <a href="https://www.orientaltrading.com/"><img src="assets/Deco3.jpg" alt="Decorations 3" class="cimage"> </a> </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="pics"><img src="assets/Cake1.jpg" alt="Cake 1" usemap="#map-2"></td>
+                        <map name="map-2">
+                            <area shape="rect" coords="100, 40, 300, 180" href="https://farhatsweets.com/">
+                        </map>
+                        <td class="pics"><img src="assets/Cake2.jpg" alt="Cake 5"></td>
+                        <td class="pics"> <a href="https://www.sweetkathys.com/"><img src="assets/Cake3.jpg" alt="Cake 6" class="cimage"> </a> </td>
+                    </tr>
+
+                    <tr>
+                        <td class="pics"><img src="assets/Act1.jpg" alt="Activities 1" usemap="#map-3"></td>
+                        <map name="map-3">
+                            <area shape="circle" coords="60,60,50" href="https://balloonjoymi.com/" alt="Circle Area">
+                            <area shape="rect" coords="300,150,400,220" href="https://www.magicwithatwist.com/" alt="Rectangle Area">
+                        </map>
+                        <td class="pics"> <img src="assets/Act2.jpg" alt="Activities 5">  </td>
+                        <td class="pics"> <a href="https://www.fairytaleyourparty.com/"> <img src="assets/Act3.jpg" alt="Activities 6" class="cimage"> </a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+           <section class="grid-container"><hr class="line">
+
+            <h3 class="subhdgs">Event Delights</h3>
+            <p>At Mini Mingle, we offer a comprehensive range of services to cater to your party needs. From event planning and decoration to entertainment and activities, we've got you covered. Our team of experts will work closely with you to understand your vision and bring it to life. Whether you need a themed party setup, professional entertainers, or interactive games, we'll create an immersive experience that will leave a lasting impression on your guests. Our goal is to take the stress out of party planning and ensure that you can enjoy every moment of your special day.</p>
+            <p>Visit our <a href="Services.html">Services</a> page to learn more about the specific offerings and packages we provide. You can also explore our <a href="Booking.html">Booking</a> page to start planning your event with us. We strive to provide personalized and tailored solutions to meet your unique requirements and make your celebration truly extraordinary.</p>
+
+        </section>
+      <hr class="line">
+     <section class="grid-container">
+
+            <h3 class="subhdgs">Why Choose Us!!</h3>
+        <p><strong>Expert Party Planners:</strong> Our experienced team knows how to create magical moments and transform ordinary parties into extraordinary celebrations.</p>
+        <p><strong>Customized Themes:</strong> We offer a wide range of themed party setups to match your child's interests, from superheroes and princesses to pirates and more.</p>
+        <p><strong>Interactive Activities:</strong> Our engaging and fun-filled activities keep kids entertained and ensure they have a blast throughout the party.</p>
+        <p><strong>Professional Entertainment:</strong> From talented performers to lively entertainers, we bring professional entertainment that adds excitement to every moment.</p>
+        <p><strong>Stress-Free Planning:</strong> Let us handle the details while you enjoy the party. We take care of decorations, activities, and more.</p>
+
+        <p>Experience the joy of celebrating with Mini Mingle. We're dedicated to making your child's special day truly magical.</p>
+
+
+     </section>   
+
+</main>
+
+    <a href="#top" class="top">Back to Top</a>
+
+    <footer>
+        <p class="ftr">&copy; 2023 MINI MINGLE All CopyRights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing </title>
+ <link rel="stylesheet" href="assets/allstyling.css">
+    <style>
+
+
+               .php {
+                     max-width: 100%;
+                     height: auto;
+                     width: 600px;
+                     border-radius: 20px;
+                     margin-left:164px;
+                    }
+
+              table {
+                     border: 5px outset;
+                     border-top-color: #0070C0;
+                     border-bottom-color: #0070C0;
+                     border-left-color: #FFC000;
+                     border-right-color: #FFC000;
+      	             margin: auto;
+    		     width: 55%;
+ 		     border-collapse: collapse;			
+                     font-family: 'Pacifico', cursive;;
+      		    }
+
+             th, td {		
+   	 	     border: 1px inset darkgreen; 
+                     padding:20px;  
+                     height:30px;
+                    }
+
+           #dscrptn {
+                     background-color: #FFDAB9;
+                     font-weight:bold;
+                     font-size:20px;
+                     color:darkblue;
+                    }
+
+                 td {
+                     font-family: serif;
+                     font-size:16px;
+                    }
+
+       .sub-headings{
+                     background-color: #FFFFE0;
+                     font-weight:bold;
+                     font-size:18px;
+                     color: red;
+                    }
+
+               #prc {
+                     background-color: #ADD8E6;
+                     font-weight:bold;
+                     font-size:18px;
+                     color: red;
+                    }
+
+  tr:nth-child(odd) {
+                     background-color: #f9f9f9;
+                     color: black;
+                     font-size:16px;
+                    }
+
+ tr:nth-child(even) {
+                     background-color: #eaeaea;
+                     color: black;
+                     font-size:16px;
+                    }
+
+               #faq {
+                     margin: 10px 0;
+                     padding: 10px;
+                     border-radius: 10px;
+                    }
+
+              .qsts {
+                     font-family: 'Times new Roman',serif;
+                     font-size: 18px;
+                     margin-bottom: 15px;
+                    }
+
+
+              .shgs {
+                     color: navy;
+                     font-size: 24px;
+                     font-weight: bold;
+                     margin-bottom: 20px;
+                     padding-top: auto;
+                     font-family: 'Satisfy', cursive;
+                     text-align:center;
+                    }
+
+                  p {
+                     font-family:  serif;
+                     margin-bottom:5px;
+                    }
+
+           .loAlpha {
+                     list-style-type:lower-alpha;
+                    }
+
+
+
+
+/* Add a media query for screens with a maximum width of 600px */
+
+@media (max-width: 400px) {
+                           table {
+                                  width: 100%; /* Make the table occupy the entire width of the screen */
+                                 }
+                          }
+
+</style>
+</head>
+
+<body id="top">
+<main>
+     <header>
+    <h1>Pricing</h1>
+    <figure class="banner">
+ <a href="index.html">
+        <img src="assets/Banner.jpg" alt="Banner Image" class="php">
+    </a>    </figure>
+    <nav>
+        <ul class="nlist">
+            <li class="nitem"><a href="index.html" class="nlink">Home</a></li>
+            <li class="nitem"><a href="aboutus.html" class="nlink">About Us</a></li>
+            <li class="nitem">
+                <a href="services.html" class="nlink">Services</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="booking.html" class="nlink">Booking</a></li>
+                    <li class="submenu-item"><a href="pricing.html" class="nlink">Pricing</a></li>
+                </ul>
+            </li>
+            <li class="nitem"><a href="contactus.html" class="nlink">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<h2 class="ani"> Pricing Options</h2>
+<br>
+<br>
+<br>
+
+ 
+    <table>
+        <thead>
+            <tr id="dscrptn">
+                <th>Party Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="sub-headings">Indoor Party</td>
+                <td>Step into a world of imagination and laughter with our indoor party experience.</td>
+                <td id="prc">$749.99 / event</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Includes: Interactive Games, Whimsical Decorations, Delightful Indoor-themed Cake</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="sub-headings">Outdoor Party</td>
+                <td>Unleash the spirit of adventure with an outdoor party filled with excitement and exploration.</td>
+                <td id="prc">$1,249.99 / event</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Includes: Outdoor Games, Vibrant Decorations, Scrumptious Nature-inspired Cake</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="sub-headings">Theme Party</td>
+                <td>Embark on a magical journey where fantasy meets reality in our enchanting themed party.</td>
+                <td id="prc">$2,099.99 / event</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Includes: Themed Costumes, Immersive Decorations, Extraordinary Fantasy-themed Cake</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="sub-headings">Family Event</td>
+                <td>Create unforgettable moments and strengthen family bonds with a tailor-made event for all generations.</td>
+                <td id="prc">Custom Quote / event</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Includes: Customized Activities, Personalized Decorations, Exquisite Multi-layered Family Cake</td>
+            </tr>
+
+      </tbody>
+
+    </table>
+
+<br>
+<br>
+<hr>
+
+
+<section id="faq">
+    <h2 class="shgs">FAQs</h2>
+    <ol>
+        <li class="qsts">
+      What is included in each package?
+            <p>** Each package includes a range of services and amenities tailored to the specific type of event. This may include:</p>
+            <ol class="loAlpha">
+                <li>Venue rental</li>
+                <li>Entertainment</li>
+                <li>Decorations</li>
+                <li>Catering</li>
+                
+            </ol>
+        </li>
+
+        <li class="qsts">
+             Can I customize a package?
+            <p>** Yes, you can customize your package by:</p>
+            <ol class="loAlpha">
+                <li>Choosing specific services and features</li>
+                <li>Adding extra decorations or themes</li>
+                <li>Modifying the menu options</li>
+                
+            </ol>
+        </li>
+
+        <li class="qsts">
+            How do I make a reservation?
+            <p>** To make a reservation, you can:</p>
+            <ol class="loAlpha">
+                <li>Visit our booking page and fill out the reservation form</li>
+                <li>Contact our customer service team via phone or email</li>
+                <li>Provide your event details and preferred date</li>
+             
+            </ol>
+        </li>
+        
+    </ol>
+
+<div>
+
+</section>
+<main>
+<br>
+<br>
+ <a href="#top" class="top">Back to Top</a>
+
+  <footer>
+        <p class="ftr">&copy; 2023 MINI MINGLE All CopyRights Reserved.</p>
+    </footer>
+</body>
+</html>

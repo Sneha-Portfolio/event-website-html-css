@@ -1,0 +1,212 @@
+              * {
+                 box-sizing:border-box
+                }
+
+                body {
+                      font-family: 'Roboto', sans-serif;
+                      background-image: url("bg4.jpg");
+                     }
+
+
+              header {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      padding-bottom: 20px;
+                      margin-bottom: 20px;
+                      font-family: 'Dancing Script', cursive;
+                     }
+
+                .ani {
+                      animation: moveright 4s ease-in-out 2s infinite alternate;
+                      box-shadow: 5px 5px 5px green;
+                     }
+
+@keyframes moveright {      
+                      from {
+                            margin-left: 20%;
+                            color: purple;
+                           }
+
+                        to {
+                            margin-left: 60%;
+                            color: green;
+                           }
+                      }
+
+
+                  
+                  nav {
+                       display: flex;
+                       justify-content: flex-end;
+                       font-family: 'Great Vibes', cursive;
+                       list-style: none;
+                       margin: 0;
+                       padding: 0;
+                      }
+
+               .nlist {
+                       list-style: none;
+                       margin: 0;
+                       padding: 0;
+                       display: flex;
+                       font-family: 'Great Vibes', cursive;
+                      }
+
+               .nitem {
+                       position: relative;
+                       margin-left: 10px;
+                      }
+
+               .nlink {
+                       text-decoration: none;
+                       color: #ff0080;
+                       font-weight: bold;
+                       font-family: 'Great Vibes', cursive;
+                       font-size: 20px;
+                       padding: 7px;
+                      }
+
+             .submenu {
+                       display: none;
+                       position: absolute;
+                       background-color: #fff;
+                       padding: 10px;
+                       border-radius: 5px;
+                       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                       font-family: 'Roboto', sans-serif;
+                       top: 100%;
+                       left: 0;
+                       min-width: 200px;
+                      }
+ 
+        .submenu-item {
+                       width: 100%;
+                       float: none;
+                       display: block;
+                       position: relative;
+                      }
+
+.nitem:hover .submenu {
+                       display: block;
+                      }
+
+
+
+.nlink:hover,
+.submenu-item .nlink:hover {
+                            color: #ff6600;
+                            }
+
+
+   
+
+/* Add a media query for responsive navigation */
+
+@media (max-width: 600px) {
+                            nav {
+                                 justify-content: center;
+                                 margin-top: 20px;
+                                }
+
+                         .nlist {
+                                 flex-direction: column;
+                                 text-align: center;
+                                 padding: 10px 0;
+                                }
+
+                         .nitem {
+                                 margin: 5px 0;
+                                 position: relative;
+                                }
+
+                         .nlink {
+                                 display: block;
+                                 padding: 7px;
+                                 font-size: 16px;
+                                }
+
+                       .submenu {
+                                 position: static;
+                                 display: none;
+                                 margin-top: 10px;
+                                 background-color: #fff;
+                                 padding: 10px;
+                                 border-radius: 5px;
+                                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                 font-family: 'Roboto', sans-serif;
+                                }
+
+          .nitem:hover .submenu {
+                                 display: none;
+                                }
+
+                  .submenu-item {
+                                 margin: 5px 0;
+                                 display: block;
+                                 position: relative;
+                                }
+                          }
+
+
+
+              .banner {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      height: 200px;
+                      margin-top: 40px;
+                     }
+
+/* Add a media query to adjust banner margin */
+
+@media (max-width: 600px) {
+                           .banner {
+                                    margin-top: 80px; 
+                                   }
+                          }
+
+                  h1 {
+                      margin-left: 35px;
+                      color: #ff0080;
+                      margin-top:10px;
+                     }
+
+                  h2 {
+                      font-size: 24px;
+                      font-weight: bold;
+                      margin-bottom: 20px;
+                      padding-top: auto;
+                      font-family: 'Satisfy', cursive;    
+                     }
+
+                   p {
+                      font-size: 18px;
+                      margin-bottom: 20px;
+                      font-family: 'Pacifico', cursive;
+                      color: black;
+                     }
+
+                .top {
+                      text-align: center;
+                      margin: 20px auto;
+                      display:block;
+                     }
+ 
+              footer {
+                      background-color: green; 
+                      padding: 2px; 
+                      text-align: center;
+                     }
+ 
+                 .ftr{
+                      color: white; 
+                      margin: 0;
+                     }
+
+
+
+
+
+
+

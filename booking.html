@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Booking </title>
+
+    <link rel="stylesheet" href="assets/allstyling.css">
+
+
+  <style>
+                      .php {
+                            max-width: 100%;
+                            height: auto;
+                            width: 600px;
+                            border-radius: 20px;
+                            margin-left:150px;
+                           }
+
+
+              input, select, 
+                  textarea {
+                            width: 120%;
+                            padding: 8px;
+                            font-size: 16px;
+                            border-radius: 4px;
+                            border: 1px solid #ccc;
+                            margin-bottom: 20px;
+                           }
+
+
+                      form {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: 400px;
+                            margin: 0 auto;
+                            margin-top:80px;
+                           }
+
+                     label {
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                            font-size:18px;
+                           }
+
+                  textarea {
+                            height: 100px;
+                           }
+
+ input[type="submit"],
+       input[type="reset"] {			
+			    background-color: #20B2AA;
+	     		    color: White;
+                            font-weight: bold;					
+    	        	    border: 5px solid #48D1CC;
+        		    border-radius: 4px;
+         		   }
+
+
+input[type="submit"]:hover {
+                            background-color: #FFDE59;
+                            color: Red;
+                            }
+
+ 
+ input[type="reset"]:hover {
+                            background-color: #FFDE59;
+                            color: Blue	;
+                           }
+
+
+    
+
+    </style>
+</head>
+
+<body id="top">
+<header>
+    <h1>Booking</h1>
+    <figure class="banner">
+   
+ <a href="index.html">
+        <img src="assets/Banner.jpg" alt="Banner Image" class="php">
+    </a>    </figure>
+    <nav>
+        <ul class="nlist">
+            <li class="nitem"><a href="index.html" class="nlink">Home</a></li>
+            <li class="nitem"><a href="aboutus.html" class="nlink">About Us</a></li>
+            <li class="nitem">
+                <a href="services.html" class="nlink">Services</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="booking.html" class="nlink">Booking</a></li>
+                    <li class="submenu-item"><a href="pricing.html" class="nlink">Pricing</a></li>
+                </ul>
+            </li>
+            <li class="nitem"><a href="contactus.html" class="nlink">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 class="ani">Booking</h2>
+
+<main>
+
+
+    <form action="mailto:agarwal.sneha@student.oaklandcc.edu" method="POST">
+        <label for="party-type">Party Type:</label>
+        <select id="party-type" name="party-type">
+            <option value="indoor">Indoor Party</option>
+            <option value="outdoor">Outdoor Party</option>
+            <option value="theme">Theme Party</option>
+            <option value="family">Family Event</option>
+        </select>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				
+	<label for="lname">Last Name</label>
+	<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				
+	<label for="zip">Zip</label>
+	<input type="text" id="zip" name="zip" placeholder="zipcode" title="must be 5 digits (99999) or 5 digits -4 digits(99999-9999)" pattern="\d{5}([-]\d{4})?" required>
+				
+
+        <label for="email">Email</label>
+	<input type="email" id="email" name="email" placeholder="123@abc.com" autofocus required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format">
+
+        <label for="date">Party Date & Time:</label>
+        <input type="datetime-local" id="datetimelocal" name="party-date-time">
+
+        <label for="participants">Number of Guests:</label>
+        <input type="number" id="Guests" name="Guests" min="5" max="80" step="5" value="10">
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+   </main>
+<br>
+<br>
+
+
+<a href="#top" class="top">Back to Top</a>
+  <footer>
+        <p class="ftr">&copy; 2023 MINI MINGLE All CopyRights Reserved.</p>
+    </footer></body>
+</html>

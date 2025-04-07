@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services</title>
+
+     <link rel="stylesheet" href="assets/allstyling.css">
+ 
+
+    <style>
+
+
+            .php {
+                  max-width: 100%;
+                  height: auto;
+                  width: 600px;
+                  border-radius:20px;
+                  margin-left:135px;
+                 }
+
+
+      .container {
+                  margin: 0 auto;
+                  padding: 10px;
+                 }
+
+
+           .sbox {
+                  border-radius: 15px;
+                  padding: 50px;
+                  margin-bottom: 20px;
+                 }
+
+            .btn {
+                  background-color: #ff6600;
+                  color: #fff;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  text-decoration:none;
+                 }
+
+          .bgrid {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-gap: 60px;
+                  margin-top: 10px;
+                 }
+
+          .bitem {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                 }
+
+         .bimage {
+                  width: 356px;
+                  height: 200px;
+                  border-radius: 15%;
+                  margin-bottom: 10px;
+                  transition: width 1s, height 1s;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  overflow: hidden;
+                 }
+
+   .bimage:hover {
+                  z-index: 1;
+                  width: 500px;
+                  height: 300px;
+                 }
+
+         .btitle {
+                  font-size: 24px;
+                  font-weight: bold;
+                  text-align: center;
+                  color: brown;
+                  font-family: 'Roboto', sans-serif;
+                 }
+
+          iframe {
+                  width: 400px;
+                  height:300px;
+                  padding: 20px;
+                  border-radius: 40px;
+                  box-shadow: 5px 10px;
+                  background-image: linear-gradient(90deg, #0097b2 , #7ed957);
+                  display: block;
+                  margin: 0 auto;
+                 }
+
+            .fun {
+                  column-count: 3;
+                  column-gap: 25px;
+                  column-rule: 3px double darkgreen;
+                  column-width: 200px;
+                  text-align: justify;
+                  margin-bottom:60px;
+                 }
+
+              hr {
+                  background-image: linear-gradient(to right,purple,violet,pink);
+                  border:0; 
+                  margin: auto; 
+                  height: 3px;
+                  width: 75%;
+                  text-align: center; 
+                  margin-bottom:60px;
+                 }
+
+               p {
+                  padding-left:10px;
+                  margin-left: 15px;
+                  color:brown;
+                  text-align:center; 
+                 }
+
+       .subhdgs {
+                 color: navy;
+                 font-size: 24px;
+                 font-weight: bold;
+                 margin-bottom: 20px;
+                 padding-top: auto;
+                 font-family: 'Satisfy', cursive;
+                 text-align:center;
+                }
+
+          audio {
+                 margin:auto;
+                 display:block;
+                 background-color:coral;
+                }
+
+
+        
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .bgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .btitle {
+        font-size: 20px;
+    }
+
+
+
+    </style>
+
+</head>
+
+
+<body id="top">
+
+  <header>
+    <h1>Services</h1>
+    <figure class="banner">
+   
+ <a href="index.html">
+        <img src="assets/Banner.jpg" alt="Banner Image" class="php">
+    </a>    </figure>
+    <nav>
+        <ul class="nlist">
+            <li class="nitem"><a href="index.html" class="nlink">Home</a></li>
+            <li class="nitem"><a href="aboutus.html" class="nlink">About Us</a></li>
+            <li class="nitem">
+                <a href="services.html" class="nlink">Services</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="booking.html" class="nlink">Booking</a></li>
+                    <li class="submenu-item"><a href="pricing.html" class="nlink">Pricing</a></li>
+                </ul>
+            </li>
+            <li class="nitem"><a href="contactus.html" class="nlink">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+ <h2 class="ani">What We Offer</h2>
+<main class="container">
+
+    <article class="sbox">
+       
+        <p>
+            At MINI MINGLE, we specialize in creating unforgettable experiences for all your celebrations. Whether you're planning an indoor party, outdoor extravaganza, or a themed celebration, we've got you covered.
+        </p>
+
+        <div class="bgrid">
+            <section class="bitem">
+                <figure><img class="bimage" src="assets/IndoorParty.jpg"></figure>
+
+                <h3 class="btitle">Indoor Party</h3>
+                <a href="booking.html" class="btn">Book Now!</a>
+                <p>Indulge in the magic of our indoor parties, where laughter echoes in every corner. Immerse yourself in a world filled with joy, games, and dancing. Our talented entertainers will keep the energy high, ensuring everyone has a blast.</p>
+            </section>
+
+            <section class="bitem">
+                <figure> <img class="bimage" src="assets/OutdoorParty.jpg"> </figure>
+                <h3 class="btitle">Outdoor Party</h3>
+                <a href="booking.html" class="btn">Book Now!</a>
+                <p>For those seeking an outdoor adventure, our outdoor parties are a perfect choice. Bask in the sunshine as you enjoy thrilling games, exhilarating activities, and a lively atmosphere. Let the fresh air and excitement ignite your celebration.</p>
+            </section>
+
+            <section class="bitem">
+                <figure> <img class="bimage" src="assets/Theme Party.jpg"></figure>
+                <h3 class="btitle">Theme Party</h3>
+                <a href="booking.html" class="btn">Book Now!</a>
+                <p>Step into a dreamland with our enchanting themed parties. From princesses and superheroes to pirates and fairies, our themed celebrations transport you to extraordinary realms. Immerse yourself in the magic and let your imagination run wild.</p>
+            </section>
+
+            <section class="bitem">
+                <figure><img class="bimage" src="assets/FamilyEvent.jpg"></figure>
+                <h3 class="btitle">Family Event</h3>
+                 <a href="booking.html" class="btn">Book Now!</a>
+                <p>Planning a family event? Look no further! We specialize in creating unforgettable moments for the whole family. Whether it's a birthday, anniversary, or reunion, our team will curate a remarkable experience that brings everyone together.</p>
+            </section>
+        
+        </div>
+
+    </article>
+
+<hr>
+    <p>Alongside our exceptional services, we offer a wide range of exciting games, captivating performances, and delightful dance sessions. Watch as the little ones twirl with joy and the grown-ups join in on the fun.We make every moment memorable </p>
+<br>
+
+<p class="fun">Experience the thrill of friendly competition with our selection of lively games, from sack races and tug-of-war to bean bag toss and mini-golf. Our talented performers bring enchanting characters to life, sparking wonder and awe in the eyes of children and adults alike. And don't miss our dance sessions, where everyone can groove to the rhythm of their favorite tunes, creating a vibrant atmosphere filled with laughter. With Mini Mingle, your event will be infused with an irresistible energy that leaves a lasting impression on all who attend. We help in making your moments into memories. Choose us to infuse your celebration with the perfect blend of entertainment, interaction, and sheer joy!"</p>
+
+<iframe src="https://www.youtube.com/embed/STkvx-ofSxs" title="12 Fun Classic Birthday Party Games for Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
+
+<br>
+<br>
+<hr>
+<h2 class="subhdgs">Listen to Our Celebration Tune</h2>
+<p>Enjoy our special celebration tune that sets the mood for an unforgettable event!</p>
+
+<audio controls loop>
+    <source src="assets/HpyBday.mp3" type="audio/mp3">
+</audio>
+
+<p>Feel the excitement and anticipation as you prepare for your upcoming event with Mini Mingle.</p>
+</main>
+  <a href="#top" class="top">Back to Top</a>
+ 
+  <footer>
+        <p class="ftr">&copy; 2023 MINI MINGLE All CopyRights Reserved.</p>
+    </footer>
+</body>
+</html>
